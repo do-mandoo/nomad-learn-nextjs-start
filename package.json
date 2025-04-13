@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "framer-motion": "^12.6.5",
     "next": "^15.2.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"

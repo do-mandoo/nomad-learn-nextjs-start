@@ -1,27 +1,32 @@
-import Link from 'next/link';
+import styles from '../../styles/home.module.css';
+import Book from '../../components/Book';
+import { API_URL } from '../constants';
 
 export const metadata = {
   title: 'Home',
 };
 
-export const API_URL = 'https://nomad-movies.nomadcoders.workers.dev/movies';
-
-async function getMovies() {
-  await new Promise(resolve => setTimeout(resolve, 1000));
-  const response = await fetch(API_URL);
-  const json = await response.json();
-  return json;
+async function getBooks() {
+  // await new Promise(resolve => setTimeout(resolve, 1000));
+  const response = await fetch(`${API_URL}/lists`);
+  const data = await response.json();
+  return data.results;
 }
 
 export default async function HomePage() {
-  const movies = await getMovies();
+  const books = await getBooks();
   return (
-    <div>
-      {movies.map(movie => (
-        <li key={movie.id}>
-          <Link href={`/movies/${movie.id}`}>{movie.title}</Link>
-        </li>
-      ))}
+    <div className={styles.container}>
+      <h1 className={styles.title}>The New York Times Best Seller Explorer</h1>
+      <div className={styles.grid}>
+        {books.map(book => (
+          <Book
+            key={book.list_name}
+            encoded={book.list_name_encoded}
+            display_name={book.display_name}
+          />
+        ))}
+      </div>
     </div>
   );
 }

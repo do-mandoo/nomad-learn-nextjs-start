@@ -1,0 +1,30 @@
+.container {
+  /* padding-top: 80px; */
+  padding: 2rem;
+  color: #000;
+}
+.title {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.button {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  text-align: center;
+  background-color: white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1); /* 기본 그림자 */
+}
+.button:hover {
+  background-color: #eee;
+}
