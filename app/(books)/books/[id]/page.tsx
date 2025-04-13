@@ -1,7 +1,8 @@
 import { BookDetail } from '../../../../components/BookDetail';
 import { API_URL } from '../../../constants';
 
-export default async function BookDetailPage({ params }: { params: { id: string } }) {
+export default async function BookDetailPage({ params }: { params: any }) {
+  const id = params.id as string;
   const res = await fetch(`${API_URL}/list?name=${params.id}`);
   const data = await res.json();
   const books = data.results.books;
