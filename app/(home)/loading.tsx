@@ -1,3 +1,7 @@
 export default function Loading() {
-  return <h2>Loading books...</h2>;
+  return (
+    <h2 style={{ display: 'flex', justifyContent: 'center', marginTop: '100px' }}>
+      Loading books...
+    </h2>
+  );
 }

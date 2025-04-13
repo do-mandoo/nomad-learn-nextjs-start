@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 async function getBooks() {
-  // await new Promise(resolve => setTimeout(resolve, 1000));
+  await new Promise(resolve => setTimeout(resolve, 1000));
   const response = await fetch(`${API_URL}/lists`);
   const data = await response.json();
   return data.results;

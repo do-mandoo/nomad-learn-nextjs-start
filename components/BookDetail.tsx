@@ -16,7 +16,7 @@ export function BookDetail({ books }: { books: Book[] }) {
           <h3>{book.title}</h3>
           <p className={styles.author}>{book.author}</p>
           <a className={styles.link} href={book.amazon_product_url} target='_blank'>
-            Buy now
+            Buy now →
           </a>
         </div>
       ))}

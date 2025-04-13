@@ -29,4 +29,5 @@
 
 .nav ul li:hover {
   transform: scale(1.05);
+  box-shadow: 0px 5px 0px rgba(95, 89, 89, 0.5);
 }

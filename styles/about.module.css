@@ -6,6 +6,19 @@
 }
 .title {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
+  font-weight: bold;
+  color: #15ff00; /* 내부 색상 */
+  -webkit-text-stroke: 1px rgb(0, 60, 255); /* 외곽선(테두리) 색상 + 두께 */
+  font-weight: bold;
+}
+.container > p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.madeby {
+  margin-top: 30px;
+  color: rgba(140, 255, 0, 0.5);
+  text-align: end;
 }
