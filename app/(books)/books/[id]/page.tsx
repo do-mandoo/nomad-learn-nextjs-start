@@ -1,13 +1,7 @@
 import { BookDetail } from '../../../../components/BookDetail';
 import { API_URL } from '../../../constants';
 
-type Props = {
-  params: {
-    id: string;
-  };
-};
-
-export default async function BookDetailPage({ params }: Props) {
+export default async function BookDetailPage({ params }: { params: { id: string } }) {
   const res = await fetch(`${API_URL}/list?name=${params.id}`);
   const data = await res.json();
   const books = data.results.books;
