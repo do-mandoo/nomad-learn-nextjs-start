@@ -1,6 +1,6 @@
 import styles from '../../styles/about.module.css';
 export const metadata = {
-  title: 'About',
+  title: 'About | nyt-bestSeller',
 };
 export default function AboutPage() {
   return (

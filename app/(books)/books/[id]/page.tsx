@@ -1,5 +1,10 @@
+import { Metadata } from 'next';
 import { BookDetail } from '../../../../components/BookDetail';
 import { API_URL } from '../../../constants';
+
+export const metadata = {
+  title: 'Book List | nyt-bestSeller',
+};
 
 export default async function BookDetailPage({ params }: { params: any }) {
   const id = params.id as string;

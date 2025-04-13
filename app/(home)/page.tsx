@@ -3,7 +3,7 @@ import Book from '../../components/Book';
 import { API_URL } from '../constants';
 
 export const metadata = {
-  title: 'Home',
+  title: 'Home | nyt-bestSeller',
 };
 
 async function getBooks() {
