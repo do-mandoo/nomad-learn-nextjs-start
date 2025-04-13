@@ -2,7 +2,9 @@ import { BookDetail } from '../../../../components/BookDetail';
 import { API_URL } from '../../../constants';
 
 type Props = {
-  params: { id: string };
+  params: {
+    id: string;
+  };
 };
 
 export default async function BookDetailPage({ params }: Props) {

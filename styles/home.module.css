@@ -27,4 +27,6 @@
 }
 .button:hover {
   background-color: #eee;
+  transform: scale(0.95);
+  box-shadow: none;
 }
