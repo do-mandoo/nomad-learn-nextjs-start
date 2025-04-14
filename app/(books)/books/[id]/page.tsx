@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { BookDetail } from '../../../../components/BookDetail';
-import { API_URL } from '../../../constants';
+import { API_URL } from '../../../../lib/constants';
 
 export const metadata = {
   title: 'Book List | nyt-bestSeller',

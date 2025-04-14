@@ -1,6 +1,6 @@
 import styles from '../../styles/home.module.css';
 import Book from '../../components/Book';
-import { API_URL } from '../constants';
+import { API_URL } from '../../lib/constants';
 
 export const metadata = {
   title: 'Home | nyt-bestSeller',
